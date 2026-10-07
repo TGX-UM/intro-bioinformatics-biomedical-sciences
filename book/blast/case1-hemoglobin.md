@@ -46,6 +46,8 @@ The NCBI Protein record of NP_000509. Screenshot of NCBI Protein, 2026-10-07 (NC
 :nonumber:
 Open the RefSeq records of both proteins and click **FASTA** at the top of the page. This shows
 the sequence in FASTA format. What does the FASTA format look like in general?
+
+*Background: [The FASTA format](background/fasta-format.md).*
 :::
 
 :::{solution} blast-c1-q2

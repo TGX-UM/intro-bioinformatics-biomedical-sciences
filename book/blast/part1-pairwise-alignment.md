@@ -121,6 +121,9 @@ Image: [Mouagip, *Aminoacids table*](https://commons.wikimedia.org/wiki/File:Ami
 
 ## Assignment 3: Choosing a scoring matrix for the protein sequences
 
+See [Alignment scoring example (for proteins)](background/scoring-proteins.md) for how PAM and
+BLOSUM matrices are made.
+
 :::{exercise} Question 1
 :label: blast-p1-a3-q1
 :nonumber:

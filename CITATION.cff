@@ -19,6 +19,25 @@ authors:
     family-names: Coort
     affiliation: Department of Translational Genomics, Maastricht University
     orcid: 'https://orcid.org/0000-0003-1224-9690'
+  - given-names: Chris
+    family-names: Evelo
+    affiliation: Department of Translational Genomics, Maastricht University
+    orcid: 'https://orcid.org/0000-0002-5301-3142'
+  - given-names: Friederike
+    family-names: Ehrhart
+    affiliation: Department of Translational Genomics, Maastricht University
+    orcid: 'https://orcid.org/0000-0002-7770-620X'
+references:
+  - type: generic
+    title: 'Protein and DNA Sequence alignment: finding and comparing sequences'
+    authors:
+      - name: Susan Coort
+      - name: Chris Evelo
+      - name: Lars Eijssen
+      - name: Egon Willighagen
+      - name: Friederike Ehrhart
+    url: 'https://github.com/BiGCAT-UM/BLAST-OER'
+    license: CC-BY-4.0
 repository-code: 'https://github.com/TGX-UM/intro-bioinformatics-biomedical-sciences'
 url: 'https://tgx-um.github.io/intro-bioinformatics-biomedical-sciences/'
 abstract: >-
@@ -32,7 +51,7 @@ keywords:
   - biological databases
   - open educational resource
 license: CC-BY-4.0
-version: 0.1.0
+version: 0.2.0
 preferred-citation:
   type: book
   title: Introduction to Bioinformatics for Biomedical Sciences

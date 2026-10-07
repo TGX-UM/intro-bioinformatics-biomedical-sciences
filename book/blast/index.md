@@ -30,7 +30,8 @@ After this workshop you can:
 - transcribe and translate a DNA sequence and explain how a mutation can change the protein;
 - choose a suitable PAM or BLOSUM substitution matrix and score a protein alignment with gap
   penalties;
-- choose the right BLAST program (BLASTp, BLASTx, BLASTn) and database for a question;
+- choose the right BLAST program (BLASTp, BLASTx, BLASTn) and database for a question (see
+  [Which BLAST to use](background/which-blast.md));
 - read a BLAST result: score, E-value, percentage identity, query coverage, and the alignments
   themselves;
 - use BLAST to compare paralogous proteins, find a gene in a poorly annotated genome, identify a
@@ -41,14 +42,13 @@ After this workshop you can:
 You need a web browser and nothing else. The second part uses the NCBI BLAST website at
 [blast.ncbi.nlm.nih.gov](https://blast.ncbi.nlm.nih.gov).
 
-For background, read the matching chapters of the open resource
-[*Protein and DNA sequence alignment: finding and comparing sequences*](https://bigcat-um.github.io/BLAST-OER/),
-written by the same department:
+Read the [Background](background/index.md) chapters first, or keep them open while you work.
+They were written for first-year Biomedical Sciences students and cover the theory behind each part:
 
-- [Aligning protein sequences: PAM and BLOSUM](https://bigcat-um.github.io/BLAST-OER/protein.html)
-- [Which BLAST to use](https://bigcat-um.github.io/BLAST-OER/which.html)
-- [Interpreting BLAST output](https://bigcat-um.github.io/BLAST-OER/ncbi.html)
-- [The FASTA format](https://bigcat-um.github.io/BLAST-OER/fasta.html)
+- [Alignment scoring for proteins: PAM and BLOSUM](background/scoring-proteins.md)
+- [Which BLAST to use](background/which-blast.md)
+- [Interpreting BLAST output](background/blast-output.md)
+- [The FASTA format](background/fasta-format.md)
 
 NCBI's own [*A Practical Guide to NCBI BLAST*](https://www.youtube.com/watch?v=KLBE0AuH-Sk) is a
 good overview video.
@@ -57,13 +57,14 @@ good overview video.
 
 | Part | Topic | BLAST program | Time |
 |---|---|---|---|
+| [Background](background/index.md) | Sequence comparison, scoring matrices, BLAST programs and output | none | 30 min reading |
 | [Part 1](part1-pairwise-alignment.md) | Pairwise sequence alignment by hand: a recap of the lecture | none | 30 min |
 | [Case 1](case1-hemoglobin.md) | Hemoglobin α and β subunits | BLASTp (two sequences) | 30 min |
 | [Case 2](case2-avian-lactase.md) | An unknown chicken transcript | BLASTx | 20 min |
 | [Case 3](case3-16s-pathogen.md) | A food-borne pathogen | BLASTn (16S rRNA) | 20 min |
 | [Case 4](case4-rett-mecp2.md) | A gene behind Rett syndrome | BLASTn | 10 min |
 
-Do Part 1 first. The four cases can be done in any order.
+Read the background before the workshop. Do Part 1 first; the four cases can be done in any order.
 
 :::{tip}
 The NCBI BLAST form remembers the last database you used. If you run Case 3 (16S rRNA) before

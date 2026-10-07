@@ -11,6 +11,15 @@ parts:
     chapters:
     - file: blast/index.md
       sections:
+      - file: blast/background/index.md
+        sections:
+        - file: blast/background/introduction.md
+        - file: blast/background/comparing-sequences.md
+        - file: blast/background/scoring-nucleotides.md
+        - file: blast/background/scoring-proteins.md
+        - file: blast/background/which-blast.md
+        - file: blast/background/blast-output.md
+        - file: blast/background/fasta-format.md
       - file: blast/part1-pairwise-alignment.md
       - file: blast/case1-hemoglobin.md
       - file: blast/case2-avian-lactase.md

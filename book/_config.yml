@@ -41,6 +41,7 @@ sphinx:
     linkcheck_ignore:
       - "https://www.omim.org/.*"
       - "https://doi.org/.*"
+      - "https://tess.elixir-europe.org/.*"
 
 teachbooks:
   attribution_location: top

@@ -8,6 +8,12 @@ Department of Translational Genomics, Maastricht University
 Version: 0.1.0 (draft)
 Source: [github.com/TGX-UM/intro-bioinformatics-biomedical-sciences](https://github.com/TGX-UM/intro-bioinformatics-biomedical-sciences)
 
+**Contributors**
+
+The background chapters of Module 1 come from *Protein and DNA sequence alignment: finding and
+comparing sequences* by Susan Coort, Chris Evelo, Lars Eijssen, Egon Willighagen and Friederike
+Ehrhart ([BiGCAT-UM/BLAST-OER](https://github.com/BiGCAT-UM/BLAST-OER), CC BY 4.0).
+
 **Licence**
 
 The text and exercises in this book are published under the

@@ -87,6 +87,8 @@ These values are for the **blastn** program, not megablast.
 :label: blast-c3-q3
 :nonumber:
 What do the total score and the max score mean?
+
+*Background: [Interpreting BLAST output](background/blast-output.md).*
 :::
 
 :::{solution} blast-c3-q3

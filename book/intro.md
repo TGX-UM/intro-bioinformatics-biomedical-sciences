@@ -34,6 +34,16 @@
     "@type": "Organization",
     "name": "Department of Translational Genomics, Maastricht University"
   },
+  "isBasedOn": {
+    "@type": "LearningResource",
+    "name": "Protein and DNA Sequence alignment: finding and comparing sequences",
+    "url": "https://github.com/BiGCAT-UM/BLAST-OER",
+    "license": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "contributor": [
+    { "@type": "Person", "name": "Chris Evelo", "identifier": "https://orcid.org/0000-0002-5301-3142" },
+    { "@type": "Person", "name": "Friederike Ehrhart", "identifier": "https://orcid.org/0000-0002-7770-620X" }
+  ],
   "funder": {
     "@type": "Organization",
     "name": "Maastricht University Library, OpenUP programme"
@@ -53,7 +63,7 @@ Every practical runs in a web browser. You do not need to install software or wr
 
 | Module | Course | Topic | Status |
 |---|---|---|---|
-| [1. Sequence alignment and BLAST](blast/index.md) | BBS1001 | Pairwise alignment, scoring matrices, BLASTp, BLASTx and BLASTn on four real cases | Available |
+| [1. Sequence alignment and BLAST](blast/index.md) | BBS1001 | Background chapters on sequence comparison and scoring; pairwise alignment, BLASTp, BLASTx and BLASTn on four real cases | Available |
 | 2. Biological databases | BBS2002 | OMIM, WikiPathways, Ensembl, NCBI Gene, UniProt and dbSNP | In preparation |
 | 3. Cell signalling | BBS2042 | Pathways and cell signalling | Planned |
 
