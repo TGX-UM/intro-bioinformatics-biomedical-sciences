@@ -1,0 +1,59 @@
+# Book configuration. Based on the TeachBooks template as set up by Maastricht University Press
+# (https://github.com/MaastrichtUniversityPress/MUP_SETUP_INTRODUCTION); see https://teachbooks.io/manual
+# for every option.
+
+title: Introduction to Bioinformatics for Biomedical Sciences
+author: Marvin Martens, Egon Willighagen, Lars Eijssen, Susan Coort, Department of Translational Genomics, Maastricht University. <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="license noopener noreferrer">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt=""></a>
+
+execute:
+  execute_notebooks: "off"
+
+html:
+  use_multitoc_numbering: true
+
+sphinx:
+  extra_extensions:
+    - teachbooks_favourites
+  config:
+    language: en
+    html_favicon: "figures/TB_favicon.ico"
+    html_baseurl: "https://tgx-um.github.io/intro-bioinformatics-biomedical-sciences"
+    html_static_path: ["figures"]
+    html_theme_options:
+      logo:
+        text: Introduction to Bioinformatics for Biomedical Sciences
+      repository_url: "https://github.com/TGX-UM/intro-bioinformatics-biomedical-sciences"
+      path_to_docs: "book"
+      repository_branch: "main"
+      use_edit_page_button: true
+      use_repository_button: true
+      use_issues_button: true
+    html_show_copyright: false
+    html_last_updated_fmt: ''
+    external_toc_exclude_missing: true
+    external_toc_path: "_toc.yml"
+    # Screenshots of web pages must not be colour-inverted in dark mode.
+    inverter_all: false
+    # Answers are published openly, collapsed under each question. Set to true to build a
+    # questions-only edition.
+    hide_solutions: false
+    exercise_style: "solution_follow_exercise"
+    linkcheck_ignore:
+      - "https://www.omim.org/.*"
+      - "https://doi.org/.*"
+
+teachbooks:
+  attribution_location: top
+
+bibtex_bibfiles:
+  - references.bib
+
+parse:
+  myst_enable_extensions:
+    - colon_fence
+    - dollarmath
+    - linkify
+    - substitution
+    - tasklist
+  myst_url_schemes: [mailto, http, https]
+  myst_links_external_new_tab: true

@@ -1,0 +1,24 @@
+# Table of contents. Each course module is one part; add a new module as a new part with an
+# index page and one page per assignment or case. See
+# https://jupyterbook.org/en/stable/structure/toc.html
+
+format: jb-book
+root: intro.md
+
+parts:
+  - caption: "Module 1: Sequence alignment and BLAST"
+    numbered: false
+    chapters:
+    - file: blast/index.md
+      sections:
+      - file: blast/part1-pairwise-alignment.md
+      - file: blast/case1-hemoglobin.md
+      - file: blast/case2-avian-lactase.md
+      - file: blast/case3-16s-pathogen.md
+      - file: blast/case4-rett-mecp2.md
+
+  - caption: About this book
+    chapters:
+    - file: colophon.md
+    - file: changelog.md
+    - file: references.md

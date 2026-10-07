@@ -1,0 +1,54 @@
+cff-version: 1.2.0
+title: Introduction to Bioinformatics for Biomedical Sciences
+message: If you use this book, please cite it using these metadata.
+type: dataset
+authors:
+  - given-names: Marvin
+    family-names: Martens
+    affiliation: Department of Translational Genomics, Maastricht University
+    orcid: 'https://orcid.org/0000-0003-2230-0840'
+  - given-names: Egon
+    family-names: Willighagen
+    affiliation: Department of Translational Genomics, Maastricht University
+    orcid: 'https://orcid.org/0000-0001-7542-0286'
+  - given-names: Lars
+    family-names: Eijssen
+    affiliation: Department of Translational Genomics, Maastricht University
+    orcid: 'https://orcid.org/0000-0002-6473-2839'
+  - given-names: Susan
+    family-names: Coort
+    affiliation: Department of Translational Genomics, Maastricht University
+    orcid: 'https://orcid.org/0000-0003-1224-9690'
+repository-code: 'https://github.com/TGX-UM/intro-bioinformatics-biomedical-sciences'
+url: 'https://tgx-um.github.io/intro-bioinformatics-biomedical-sciences/'
+abstract: >-
+  An open curriculum of browser-based bioinformatics practicals for bachelor Biomedical Sciences
+  students at Maastricht University: sequence alignment and BLAST, biological databases, and
+  pathways and cell signalling.
+keywords:
+  - bioinformatics
+  - BLAST
+  - sequence alignment
+  - biological databases
+  - open educational resource
+license: CC-BY-4.0
+version: 0.1.0
+preferred-citation:
+  type: book
+  title: Introduction to Bioinformatics for Biomedical Sciences
+  authors:
+    - given-names: Marvin
+      family-names: Martens
+      orcid: 'https://orcid.org/0000-0003-2230-0840'
+    - given-names: Egon
+      family-names: Willighagen
+      orcid: 'https://orcid.org/0000-0001-7542-0286'
+    - given-names: Lars
+      family-names: Eijssen
+      orcid: 'https://orcid.org/0000-0002-6473-2839'
+    - given-names: Susan
+      family-names: Coort
+      orcid: 'https://orcid.org/0000-0003-1224-9690'
+  publisher:
+    name: Maastricht University
+  url: 'https://tgx-um.github.io/intro-bioinformatics-biomedical-sciences/'
