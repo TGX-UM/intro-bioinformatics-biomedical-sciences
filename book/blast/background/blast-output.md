@@ -2,7 +2,7 @@
 # Interpreting BLAST output
 
 :::{note}
-This chapter comes from *Protein and DNA sequence alignment: finding and comparing sequences* by Susan Coort, Chris Evelo, Lars Eijssen, Egon Willighagen and Friederike Ehrhart, licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), originally published at [github.com/BiGCAT-UM/BLAST-OER](https://github.com/BiGCAT-UM/BLAST-OER) (version of 2023-10-16). It has been converted to the format of this book; the text is unchanged. See [Background](index.md) for details.
+This chapter comes from *Protein and DNA sequence alignment: finding and comparing sequences* by Susan Coort, Chris Evelo, Lars Eijssen, Egon Willighagen and Friederike Ehrhart, licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), originally published at [github.com/BiGCAT-UM/BLAST-OER](https://github.com/BiGCAT-UM/BLAST-OER) (version of 2023-10-16). It has been converted to the format of this book, with small corrections listed in the [changelog](../../changelog.md). See [Background](index.md) for details.
 :::
 
 The [NCBI BLAST](which-blast.md) output first reports a ‘search summary’ (click to open),
@@ -22,7 +22,7 @@ Accession code. The columns have the following interpretation:
 * ***Query coverage*** indicates which percentage of the input sequence is aligned to that database hit;
 * ***Identity*** gives the percentage of residues (either nucleotides or amino acids) that are identical in the alignment between the input sequence and the database hit;
 * ***Accession code*** gives the database identifier of the hit;
-* ***E-value***, explained below (see also the [video's by NCBI](#blast-bg-material)).
+* ***E-value***, explained below (see also the [videos by NCBI](#blast-bg-material)).
 
 The expect value E of a score S is the number of alignments with scores greater than or
 equal to S that are expected to occur by chance in the specific database search. This is
@@ -48,7 +48,9 @@ tggcttagta gaagttgaaa aaggcgtttt gcctcaactt gaacagccct atgtgttcat
 tggcttagta gaagttgaaa ggccccaaaa gcctcaactt gaacagccct atgtgttcat
 ```
 
-Here, the max score is 15, while the total score is 25.
+Here, BLAST reports two separate sub hits to the same database entry: one of 20 and one of
+30 identical nucleotides. With a simple score of one point per identical nucleotide, the max
+score is 30 (the best sub hit), while the total score is 50 (both sub hits added up).
 
-Only if the alignment consists of one continued alignment without gaps,
-then the max and total score is identical.
+The max and total score are identical only if the alignment to a database entry consists of
+a single sub hit. That sub hit may contain gaps.

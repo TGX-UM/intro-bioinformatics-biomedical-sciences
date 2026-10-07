@@ -2,11 +2,11 @@
 # Alignment scoring example (for nucleotides)
 
 :::{note}
-This chapter comes from *Protein and DNA sequence alignment: finding and comparing sequences* by Susan Coort, Chris Evelo, Lars Eijssen, Egon Willighagen and Friederike Ehrhart, licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), originally published at [github.com/BiGCAT-UM/BLAST-OER](https://github.com/BiGCAT-UM/BLAST-OER) (version of 2023-10-16). It has been converted to the format of this book; the text is unchanged. See [Background](index.md) for details.
+This chapter comes from *Protein and DNA sequence alignment: finding and comparing sequences* by Susan Coort, Chris Evelo, Lars Eijssen, Egon Willighagen and Friederike Ehrhart, licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), originally published at [github.com/BiGCAT-UM/BLAST-OER](https://github.com/BiGCAT-UM/BLAST-OER) (version of 2023-10-16). It has been converted to the format of this book, with small corrections listed in the [changelog](../../changelog.md). See [Background](index.md) for details.
 :::
 
-In Case 10, the various sequences were nicely aligned: the first nucleotides of both
-sequences were at the same alignment position. However, one aspect of making a new
+In simple examples, such as Part 1 of the exercises, the sequences are nicely aligned: the
+first nucleotides of both sequences are at the same alignment position. However, one aspect of making a new
 alignment and searching for a match in a database, is that one does not know at the start
 which two nucleotides form that first match.
 
@@ -18,7 +18,7 @@ GCATT
 CAGTG
 ```
 
-At first sight, does it not a good overlap. However, if we shift the alignment by one
+At first sight, this is not a good overlap. However, if we shift the alignment by one
 nucleotide, it matches better:
 
 ```
@@ -54,7 +54,7 @@ GCATT
 GC-TT
 ```
 
-But artibrarily including gaps makes it match nicely, but it should affect the total score. After
+But arbitrarily including gaps makes it match nicely, but it should affect the total score. After
 all, we can match any sequence if we can introduce gaps without penalties. This is the
 background of the gap penalty. Elongation of a gap (making it longer) typically has a lower
 penalty than starting a new gap. If the penalty is -1 point, then the last alignment has three

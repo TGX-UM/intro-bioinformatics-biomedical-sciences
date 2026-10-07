@@ -34,10 +34,12 @@ follow the version of 16 October 2023 (commit `8a911e2`).
 
 Changes made when bringing it into this book: the chapters were converted to the book's format
 (navigation links replaced by the book's own, images turned into numbered figures with credits,
-links between chapters updated). The text itself is unchanged. One figure, a Proteopedia
+links between chapters updated). Since then, typos, a wrong score example, an outdated
+course reference and two broken links have been corrected; see the [changelog](../../changelog.md).
+One figure, a Proteopedia
 rendering of the β-hemoglobin glutamate, was left out because its licence (GNU FDL) is not
 compatible with this book; the text still links to the
-[Proteopedia page](https://proteopedia.org/wiki/index.php/Hemoglobin). Corrections to the text
+[Proteopedia page](https://proteopedia.org/wiki/index.php/Hemoglobin). Further corrections
 are tracked as [issues](https://github.com/TGX-UM/intro-bioinformatics-biomedical-sciences/issues).
 
 (blast-bg-material)=
