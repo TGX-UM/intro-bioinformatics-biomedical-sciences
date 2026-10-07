@@ -60,3 +60,12 @@ Alignment of nucleotide sequences is still useful, for example to:
 * confirm the identity of a cDNA
 * study DNA polymorphisms
 * study genomes (compare genomes, create genome annotations)
+
+:::{admonition} In the exercises
+:class: seealso
+- [Part 1](../part1-pairwise-alignment.md), Assignment 1: describing identity, mismatches and gaps.
+- [Case 1](../case1-hemoglobin.md): the paralogues human hemoglobin α and β; BLAST's *Positives* are the similarity defined
+  above.
+- [Case 2](../case2-avian-lactase.md): a cross-species search at the protein level with BLASTx.
+- [Case 4](../case4-rett-mecp2.md): a nucleotide alignment used to find a disease-causing point mutation.
+:::

@@ -108,3 +108,12 @@ a single sidechain can be major effects, such as in sickle-cell anemia. Here, a 
 
 The online book [A sequence alignment and analysis of SARS-CoV-2 spike glycoprotein](https://static-bcrf.biochem.wisc.edu/tutorials/COVID19/spikealignment/book/)
 (2020, Jean-Yves Sgro) provides a nice walk-through for aligning SARS-CoV-2 spike protein sequences.
+
+:::{admonition} In the exercises
+:class: seealso
+- [Part 1](../part1-pairwise-alignment.md), Assignment 2: transcribing and translating with the codon table, and Assignment 1,
+  question 3: what a mutation can do to a protein.
+- [Case 1](../case1-hemoglobin.md): the hemoglobin α and β subunits. The sickle-cell mutation mentioned above is in the β
+  subunit.
+- [Case 3](../case3-16s-pathogen.md): identifying a bacterium from its 16S rRNA gene, an example of molecular phylogenetics.
+:::

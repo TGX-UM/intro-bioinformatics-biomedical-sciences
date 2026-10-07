@@ -24,3 +24,9 @@ a comment line indicates the start of the next sequence.
 
 * [NCBI BLAST Help page](https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&PAGE_TYPE=BlastDocs&DOC_TYPE=BlastHelp)
 * [Wikipedia: FASTA format](https://en.wikipedia.org/wiki/FASTA_format)
+
+:::{admonition} In the exercises
+:class: seealso
+- [Case 1](../case1-hemoglobin.md), question 2: the FASTA records of the hemoglobin subunits.
+  The query sequences of Cases 2–4 can also be downloaded as FASTA files.
+:::

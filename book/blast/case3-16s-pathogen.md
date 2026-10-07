@@ -17,7 +17,13 @@ A common way to identify bacteria is to sequence their **16S rRNA gene**. This g
 all bacteria and highly conserved, which makes it useful as a "molecular clock" for tracing their
 evolutionary relationships. It encodes part of the ribosome, which every cell needs for protein
 synthesis. PCR with primers specific for this gene amplifies a region of it, which is then
-sequenced. The result is a FASTA file with the 16S rRNA gene sequence.
+sequenced. The result is a FASTA file with the 16S rRNA gene sequence. Using DNA differences to
+classify organisms is the molecular phylogenetics described in the
+[Introduction](background/introduction.md).
+
+*Background: [Introduction](background/introduction.md),
+[Which BLAST to use](background/which-blast.md) and
+[Interpreting BLAST output](background/blast-output.md).*
 
 The sequence that came back from the lab (106 nucleotides,
 {download}`download as FASTA <data/case3_16S_rRNA.fasta>`):
@@ -38,6 +44,8 @@ choose **blastn** rather than megablast.
 
 Which bacterial species is most similar to your sequence (ranked by E-value)? What is the
 percentage identity?
+
+*Background: [Which BLAST to use](background/which-blast.md).*
 :::
 
 ```{figure} figures/case3-16s-database-selection.png

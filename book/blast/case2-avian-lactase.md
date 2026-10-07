@@ -13,6 +13,10 @@ of other birds can reveal which gene it comes from. The same comparison also say
 how closely related the species are. In this case you compare an unknown chicken transcript with
 the proteins of the turkey and the swan goose.
 
+*Background: [Comparing sequences](background/comparing-sequences.md) (why protein comparisons
+reach further back in evolution), [Which BLAST to use](background/which-blast.md) and
+[Interpreting BLAST output](background/blast-output.md).*
+
 The nucleotide sequence of the unknown transcript (1771 nucleotides,
 {download}`download as FASTA <data/case2_unknown_transcript.fasta>`):
 
@@ -23,7 +27,9 @@ The nucleotide sequence of the unknown transcript (1771 nucleotides,
 ## Assignment: BLASTx against turkey and swan goose
 
 BLASTx translates a nucleotide query in all six reading frames and searches the translations
-against a protein database.
+against a protein database (see [Which BLAST to use](background/which-blast.md)). Comparing at the
+protein level is the better choice across species, because many changes in the DNA do not change
+the protein ([Comparing sequences](background/comparing-sequences.md)).
 
 :::{exercise} Question 1
 :label: blast-c2-q1
@@ -88,6 +94,10 @@ ranges for this one hit?
 BLAST makes *local* alignments, so different parts of the query can match different regions of
 the same database sequence. Each range is one of these local alignments, and each shows the
 **Frame** of the query translation it uses.
+
+These ranges are the *sub hits* described in [Interpreting BLAST output](background/blast-output.md).
+They explain why the total score in question 1 (2402) is much higher than the max score (461):
+the max score is the best range alone, the total score adds them all up.
 
 Two things explain why this hit has so many ranges:
 

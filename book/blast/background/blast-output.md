@@ -54,3 +54,13 @@ score is 30 (the best sub hit), while the total score is 50 (both sub hits added
 
 The max and total score are identical only if the alignment to a database entry consists of
 a single sub hit. That sub hit may contain gaps.
+
+:::{admonition} In the exercises
+:class: seealso
+- [Case 1](../case1-hemoglobin.md), questions 3, 4 and 8: reading the results table and the alignment, and why raw scores
+  from different matrices cannot be compared.
+- [Case 2](../case2-avian-lactase.md), questions 1 and 3: a hit with many sub hits, where the total score is far above the max
+  score.
+- [Case 3](../case3-16s-pathogen.md), questions 2 and 3: a hit with a single sub hit, where max and total score are equal.
+- [Case 4](../case4-rett-mecp2.md), question 1: a near-identical hit with an E-value of 0.0.
+:::

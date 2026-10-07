@@ -16,6 +16,24 @@ question in the exercises sends you here.
 6. [Interpreting BLAST output](blast-output.md)
 7. [The FASTA format](fasta-format.md)
 
+## How the chapters match the exercises
+
+Each chapter ends with a box that lists the exercises using it. The same links appear the other
+way round at the top of each exercise page.
+
+| Chapter | Part 1 | Case 1 | Case 2 | Case 3 | Case 4 |
+|---|:-:|:-:|:-:|:-:|:-:|
+| [Introduction](introduction.md) | ✓ | ✓ | | ✓ | |
+| [Comparing sequences](comparing-sequences.md) | ✓ | ✓ | ✓ | | ✓ |
+| [Alignment scoring example (for nucleotides)](scoring-nucleotides.md) | ✓ | | | | |
+| [Alignment scoring example (for proteins)](scoring-proteins.md) | ✓ | ✓ | | | |
+| [Which BLAST to use](which-blast.md) | | ✓ | ✓ | ✓ | ✓ |
+| [Interpreting BLAST output](blast-output.md) | | ✓ | ✓ | ✓ | ✓ |
+| [The FASTA format](fasta-format.md) | | ✓ | | | |
+
+The questions inside the Introduction are part of the original resource and have no worked
+solution in this book.
+
 ## Origin and credits
 
 This section is the Open Educational Resource *Protein and DNA sequence alignment: finding and
@@ -34,7 +52,8 @@ follow the version of 16 October 2023 (commit `8a911e2`).
 
 Changes made when bringing it into this book: the chapters were converted to the book's format
 (navigation links replaced by the book's own, images turned into numbered figures with credits,
-links between chapters updated). Since then, typos, a wrong score example, an outdated
+links between chapters updated), and each chapter got a closing box, written for this book, that
+links it to the exercises. Since then, typos, a wrong score example, an outdated
 course reference and two broken links have been corrected; see the [changelog](../../changelog.md).
 One figure, a Proteopedia
 rendering of the β-hemoglobin glutamate, was left out because its licence (GNU FDL) is not

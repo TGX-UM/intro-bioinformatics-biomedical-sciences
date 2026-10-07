@@ -22,3 +22,10 @@ Or, how NCBI visualizes it themselves:
 
 The BLAST programs on the NCBI BLAST home page. Screenshot of NCBI BLAST (NCBI, public domain).
 ```
+
+:::{admonition} In the exercises
+:class: seealso
+- [Case 1](../case1-hemoglobin.md): BLASTp, aligning two protein sequences.
+- [Case 2](../case2-avian-lactase.md): BLASTx, a nucleotide query against a protein database.
+- [Case 3](../case3-16s-pathogen.md) and [Case 4](../case4-rett-mecp2.md): BLASTn, against the 16S rRNA database and the standard nucleotide database.
+:::

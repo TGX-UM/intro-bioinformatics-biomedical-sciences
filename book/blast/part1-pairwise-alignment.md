@@ -3,6 +3,11 @@
 
 *Time: 30 min. Pen and paper, no computer needed. This part recaps the lecture.*
 
+*Background: [Introduction](background/introduction.md) (codons and protein folds),
+[Comparing sequences](background/comparing-sequences.md) (identity, conservation, gaps),
+[Alignment scoring example (for nucleotides)](background/scoring-nucleotides.md) and
+[Alignment scoring example (for proteins)](background/scoring-proteins.md).*
+
 To illustrate, we align the following two DNA sequences with each other:
 
 ```text
@@ -19,6 +24,10 @@ Sequence B  ACCACATCG---GACTGACGT
 ```
 
 ## Assignment 1: DNA sequence comparison
+
+[Comparing sequences](background/comparing-sequences.md) defines identity, conservation and gaps.
+[Alignment scoring example (for nucleotides)](background/scoring-nucleotides.md) works through
+almost the same pair of sequences, aligned once without and once with a gap.
 
 :::{exercise} Question 1
 :label: blast-p1-a1-q1
@@ -53,6 +62,9 @@ here?
 :nonumber:
 Describe what could happen to the function of the protein encoded by a DNA sequence with a
 mutation.
+
+*Background: [Introduction](background/introduction.md), which gives sickle-cell anemia as an
+example. You meet the same protein, hemoglobin, in [Case 1](case1-hemoglobin.md).*
 :::
 
 :::{solution} blast-p1-a1-q3
@@ -63,6 +75,9 @@ mutation can also have no effect at all (a silent mutation).
 :::
 
 ## Assignment 2: From DNA sequence to protein sequence
+
+The section *Codons* in the [Introduction](background/introduction.md) explains why not every
+nucleotide change alters the protein.
 
 :::{exercise} Assignment 2
 :label: blast-p1-a2
@@ -227,6 +242,8 @@ Score each aligned pair and add them up:
 
 Use the following scoring scheme for gaps: **opening a gap costs −1; each extension of a gap
 costs −0.5**.
+The section *Gaps* in [Alignment scoring example (for nucleotides)](background/scoring-nucleotides.md)
+explains why gaps are penalised and why extending a gap costs less than opening one.
 
 :::{exercise} Question 1
 :label: blast-p1-a5-q1

@@ -91,3 +91,9 @@ we have on the biological properties of sequences.
 Scoring schemes for nucleotides sequences are generally quite simple (a positive score for a match,
 a negative score (penalty) for a mismatch, and penalties for any included gaps). We showed examples
 of this earlier on this page.
+
+:::{admonition} In the exercises
+:class: seealso
+- [Part 1](../part1-pairwise-alignment.md), Assignments 1 and 5: the two-sequence example above is close to sequences A and B in
+  Part 1, and Assignment 5 applies gap penalties to it.
+:::

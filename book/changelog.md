@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.2.2 (October 2026)
+
+- Module 1: the background chapters and the exercises now link to each other. Each exercise page
+  lists its background chapters at the top and points to them at the questions they help with;
+  each background chapter ends with a box listing the exercises that use it; the module page and
+  the background index have a table matching chapters to exercises.
+
 ## 0.2.1 (October 2026)
 
 Corrections to the background chapters of Module 1:

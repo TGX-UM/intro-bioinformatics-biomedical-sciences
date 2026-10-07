@@ -15,6 +15,10 @@ the suspected gene by PCR, and sequence the PCR product.
 Your task is to identify the gene from this sequence and describe the mutation. You will also
 find out more about the disease.
 
+*Background: [Comparing sequences](background/comparing-sequences.md) (nucleotide alignment to
+study DNA polymorphisms), [Which BLAST to use](background/which-blast.md) and
+[Interpreting BLAST output](background/blast-output.md).*
+
 The patient's sequence (1820 nucleotides,
 {download}`download as FASTA <data/case4_patient_sequence.fasta>`):
 
@@ -70,6 +74,9 @@ What type of mutation is present in the patient's sequence? Where in the gene is
 
 *Hint: in the **Alignments** tab, tick **CDS feature** to show the protein translation alongside
 the alignment.*
+
+*Compare with Assignment 1 of [Part 1](part1-pairwise-alignment.md), where you described the
+same kinds of mutation by hand.*
 :::
 
 :::{solution} blast-c4-q2

@@ -101,3 +101,11 @@ The BLOSUM62 scoring matrix. From BLAST-OER, CC BY 4.0.
 * Henikoff S, Henikoff JG. Amino acid substitution matrices from protein blocks.
   Proceedings of the National Academy of Sciences. 1992 Nov 15;89(22):10915–9.
   https://doi.org/10.1073/pnas.89.22.10915 
+
+:::{admonition} In the exercises
+:class: seealso
+- [Part 1](../part1-pairwise-alignment.md), Assignments 3–5: choosing a PAM or BLOSUM matrix and scoring a protein alignment with
+  BLOSUM80.
+- [Case 1](../case1-hemoglobin.md), questions 6–9: changing the matrix in BLASTp and seeing how the scores and positives
+  change.
+:::

@@ -12,6 +12,16 @@ The α and β subunits of hemoglobin, the oxygen-carrying protein in red blood c
 one ancestral protein that was duplicated in evolution. In this case you compare the human α and β
 hemoglobin proteins and use them to explore pairwise sequence alignment with BLAST.
 
+Because they are homologues within one species, α and β are *paralogues*;
+[Comparing sequences](background/comparing-sequences.md) uses exactly this pair as its example.
+
+*Background: [Introduction](background/introduction.md) (sickle-cell anemia, a mutation in the β
+subunit), [Comparing sequences](background/comparing-sequences.md),
+[Alignment scoring example (for proteins)](background/scoring-proteins.md),
+[Which BLAST to use](background/which-blast.md),
+[The FASTA format](background/fasta-format.md) and
+[Interpreting BLAST output](background/blast-output.md).*
+
 :::{exercise} Question 1
 :label: blast-c1-q1
 :nonumber:
@@ -95,6 +105,8 @@ input boxes.*
 | **Max score** | | **E-value** | |
 | **Total score** | | **Percentage identity** | |
 | **Query coverage** | | **Accession length** | |
+
+*Background: [Interpreting BLAST output](background/blast-output.md) explains each column.*
 :::
 
 :::{solution} blast-c1-q3
@@ -114,6 +126,9 @@ Click the **Alignments** tab and fill in the table.
 | Alignment length | | **Positives** | |
 |---|---|---|---|
 | **Identities** | | **Gaps** | |
+
+*Background: [Comparing sequences](background/comparing-sequences.md) explains identity,
+conservation and similarity.*
 :::
 
 :::{solution} blast-c1-q4
@@ -154,6 +169,9 @@ input form and change the matrix. Changing the matrix also changes the default g
 | BLOSUM45 | | |
 | PAM70 | | |
 | PAM250 | | |
+
+*Background: [Alignment scoring example (for proteins)](background/scoring-proteins.md), and
+Assignment 3 of [Part 1](part1-pairwise-alignment.md).*
 :::
 
 :::{solution} blast-c1-q6
@@ -203,6 +221,8 @@ again.
 :nonumber:
 The score in question 7 differs from the score in question 3. Can you compare these scores? Does
 the alignment with the highest score have the best alignment?
+
+*Background: the E-value section of [Interpreting BLAST output](background/blast-output.md).*
 :::
 
 :::{solution} blast-c1-q8
