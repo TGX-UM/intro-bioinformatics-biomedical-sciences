@@ -13,7 +13,7 @@
   "url": "https://tgx-um.github.io/intro-bioinformatics-biomedical-sciences/",
   "name": "Introduction to Bioinformatics for Biomedical Sciences",
   "description": "An open curriculum of browser-based bioinformatics practicals for bachelor Biomedical Sciences students: sequence alignment and BLAST, biological databases, and pathways and cell signalling. No installation and no programming required.",
-  "keywords": "bioinformatics, BLAST, sequence alignment, biological databases, pathways, undergraduate teaching, open educational resource",
+  "keywords": "bioinformatics, BLAST, sequence alignment, biological databases, Ensembl, NCBI Gene, UniProt, dbSNP, ClinVar, OMIM, WikiPathways, pathways, undergraduate teaching, open educational resource",
   "inLanguage": "en",
   "learningResourceType": "e-book",
   "educationalLevel": "Undergraduate, bachelor",
@@ -64,7 +64,7 @@ Every practical runs in a web browser. You do not need to install software or wr
 | Module | Course | Topic | Status |
 |---|---|---|---|
 | [1. Sequence alignment and BLAST](blast/index.md) | BBS1001 | Background chapters on sequence comparison and scoring; pairwise alignment, BLASTp, BLASTx and BLASTn on four real cases | Available |
-| 2. Biological databases | BBS2002 | OMIM, WikiPathways, Ensembl, NCBI Gene, UniProt and dbSNP | In preparation |
+| [2. Biological databases](databases/index.md) | BBS2002 | A reference guide to the databases; OMIM, WikiPathways, Ensembl, NCBI Gene, ChEBI, PubChem, UniProt, dbSNP and ClinVar on real genes and variants (IGF-1, APC, TP53, LMNA, APOE) | Available |
 | 3. Cell signalling | BBS2042 | Pathways and cell signalling | Planned |
 
 ## How to use this book

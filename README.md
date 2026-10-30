@@ -9,7 +9,7 @@ Read it online: https://tgx-um.github.io/intro-bioinformatics-biomedical-science
 | Module | Course | Status |
 |---|---|---|
 | 1. Sequence alignment and BLAST | BBS1001 | Available |
-| 2. Biological databases | BBS2002 | In preparation |
+| 2. Biological databases | BBS2002 | Available |
 | 3. Cell signalling | BBS2042 | Planned |
 
 ## Building the book

@@ -5,7 +5,7 @@
 Marvin Martens, Egon Willighagen, Lars Eijssen and Susan Coort
 Department of Translational Genomics, Maastricht University
 
-Version: 0.1.0 (draft)
+Version: 0.3.0 (draft)
 Source: [github.com/TGX-UM/intro-bioinformatics-biomedical-sciences](https://github.com/TGX-UM/intro-bioinformatics-biomedical-sciences)
 
 **Contributors**
@@ -13,6 +13,10 @@ Source: [github.com/TGX-UM/intro-bioinformatics-biomedical-sciences](https://git
 The background chapters of Module 1 come from *Protein and DNA sequence alignment: finding and
 comparing sequences* by Susan Coort, Chris Evelo, Lars Eijssen, Egon Willighagen and Friederike
 Ehrhart ([BiGCAT-UM/BLAST-OER](https://github.com/BiGCAT-UM/BLAST-OER), CC BY 4.0).
+
+The reference guide of Module 2 is based on *A Guide to Online Data Resources for Molecular
+Biology Information* by Lars Eijssen (v1.0 2017, v2.0 2019), rewritten for the 2026 database
+interfaces.
 
 **Licence**
 

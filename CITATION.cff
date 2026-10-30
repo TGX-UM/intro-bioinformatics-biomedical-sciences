@@ -49,9 +49,10 @@ keywords:
   - BLAST
   - sequence alignment
   - biological databases
+  - genetic variants
   - open educational resource
 license: CC-BY-4.0
-version: 0.2.2
+version: 0.3.0
 preferred-citation:
   type: book
   title: Introduction to Bioinformatics for Biomedical Sciences

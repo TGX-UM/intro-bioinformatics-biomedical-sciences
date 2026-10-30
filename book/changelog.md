@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.3.0 (November 2026)
+
+- Module 2, *Biological databases* (BBS2002): the preparations and computer sessions of
+  practicals 2A and 2B, two extra-practice assignments, and a reference guide with one page per
+  database. Answers checked against the live databases between 22 and 28 October 2026; each
+  answer carries its own date and release.
+
 ## 0.2.2 (October 2026)
 
 - Module 1: the background chapters and the exercises now link to each other. Each exercise page

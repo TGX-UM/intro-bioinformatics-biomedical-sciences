@@ -26,6 +26,32 @@ parts:
       - file: blast/case3-16s-pathogen.md
       - file: blast/case4-rett-mecp2.md
 
+  - caption: "Module 2: Biological databases"
+    numbered: false
+    chapters:
+    - file: databases/index.md
+      sections:
+      - file: databases/guide/index.md
+        sections:
+        - file: databases/guide/why-databases.md
+        - file: databases/guide/identifiers.md
+        - file: databases/guide/omim.md
+        - file: databases/guide/wikipathways.md
+        - file: databases/guide/ensembl.md
+        - file: databases/guide/ncbi-gene.md
+        - file: databases/guide/dbsnp-clinvar.md
+        - file: databases/guide/uniprot.md
+        - file: databases/guide/chebi.md
+        - file: databases/guide/pubchem.md
+        - file: databases/guide/where-to-look.md
+        - file: databases/guide/not-covered.md
+      - file: databases/prep-2a.md
+      - file: databases/session-2a.md
+      - file: databases/prep-2b.md
+      - file: databases/session-2b.md
+      - file: databases/catch-up-2a.md
+      - file: databases/catch-up-2b.md
+
   - caption: About this book
     chapters:
     - file: colophon.md
