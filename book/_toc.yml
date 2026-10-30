@@ -45,12 +45,24 @@ parts:
         - file: databases/guide/pubchem.md
         - file: databases/guide/where-to-look.md
         - file: databases/guide/not-covered.md
-      - file: databases/prep-2a.md
-      - file: databases/session-2a.md
-      - file: databases/prep-2b.md
-      - file: databases/session-2b.md
-      - file: databases/catch-up-2a.md
-      - file: databases/catch-up-2b.md
+      - file: databases/genes-pathways/index.md
+        sections:
+        - file: databases/genes-pathways/a1-omim.md
+        - file: databases/genes-pathways/a2-wikipathways.md
+        - file: databases/genes-pathways/a3-ensembl.md
+        - file: databases/genes-pathways/a4-pi3k-pathway.md
+        - file: databases/genes-pathways/a5-compound.md
+        - file: databases/genes-pathways/a6-ncbi-gene.md
+        - file: databases/genes-pathways/extra-cert1.md
+      - file: databases/variants-proteins/index.md
+        sections:
+        - file: databases/variants-proteins/a1-apc-variant.md
+        - file: databases/variants-proteins/a2-apc-protein.md
+        - file: databases/variants-proteins/a3-one-variant.md
+        - file: databases/variants-proteins/extra-vhl.md
+      - file: databases/one-gene/index.md
+        sections:
+        - file: databases/one-gene/assignment.md
 
   - caption: About this book
     chapters:

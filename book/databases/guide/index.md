@@ -1,7 +1,7 @@
 (db-guide)=
 # Reference guide to online resources
 
-This guide goes with the BBS2002 practicals 2A and 2B. It describes the online resources you use there: what each one is for, how to get to the information you need on the current websites, and where students most often go wrong. Use it while you work through the assignments, and keep it for later: you will need the same databases in other courses, in your bachelor thesis and probably beyond.
+This guide goes with the practicals of this module. It describes the online resources you use there: what each one is for, how to get to the information you need on the current websites, and where students most often go wrong. Use it while you work through the assignments, and keep it for later: you will need the same databases in other courses, in your bachelor thesis and probably beyond.
 
 You do not need to read it from start to finish. The first two sections explain ideas that apply to every database (identifiers, versions, reference transcripts). After that there is one section per resource, in roughly the order you meet them in the practicals, followed by a table that tells you where to look for which question.
 

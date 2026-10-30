@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.3.1 (October 2026)
+
+- Module 2 restructured for the book rather than for one course: three practicals by topic
+  (*Genes, pathways and compounds*; *Variants and proteins*; *One gene through all six
+  databases*), one page per assignment, with home preparation and lab session merged. The former
+  catch-up assignments are now additional practice at the end of Practicals 1 and 2.
+- Each practical page has a placeholder for a short introductory lecture recording, and the
+  module page a placeholder for a practice quiz.
+- References to course-specific tutorial cases removed; version themes are named instead.
+
 ## 0.3.0 (November 2026)
 
 - Module 2, *Biological databases* (BBS2002): the preparations and computer sessions of

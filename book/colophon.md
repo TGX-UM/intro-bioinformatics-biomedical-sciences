@@ -5,7 +5,7 @@
 Marvin Martens, Egon Willighagen, Lars Eijssen and Susan Coort
 Department of Translational Genomics, Maastricht University
 
-Version: 0.3.0 (draft)
+Version: 0.3.1 (draft)
 Source: [github.com/TGX-UM/intro-bioinformatics-biomedical-sciences](https://github.com/TGX-UM/intro-bioinformatics-biomedical-sciences)
 
 **Contributors**

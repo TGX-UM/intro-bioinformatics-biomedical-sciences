@@ -1,7 +1,7 @@
-(db-session-2b)=
-# Practical 2B: computer session
+(db-p3-a1)=
+# Assignment 1: One gene through all six databases
 
-*Time: about 2 hours. Do the [2B preparation](prep-2b.md) first.*
+*Time: 80 min.*
 
 :::{note}
 Answers checked against the live databases between 22 and 28 October 2026. Each answer says
@@ -9,246 +9,24 @@ when, and against which release, it was checked. Databases are updated all the t
 numbers may differ.
 :::
 
-In practical 2A you met a disease database (OMIM), a pathway database (WikiPathways), two
-genomic databases (Ensembl and NCBI Gene) and two chemical databases (ChEBI and PubChem). In the
-2B preparation you placed the APC gene in Ensembl, studied one of its variants in dbSNP and
-ClinVar, and explored a protein database (UniProt). In this session you use the variant
-database dbSNP together with Ensembl, and then follow one gene through every database you have
-used so far.
+*Background: the [Reference guide](../guide/index.md) has one page per database.*
 
-*Background: the [Reference guide](guide/index.md) has one page per database.*
-
-
-- In the preparation you studied the APC gene and one of its variants, which is linked to familial adenomatous polyposis (FAP).
-
-- In assignment 1 you study a second APC variant, in dbSNP and in Ensembl. Everyone does the same variant.
-
-- In assignment 2 you follow **one gene** through all the databases of practicals 2A and 2B. There are three versions, each tied to a tutorial case. Choose one and work through it. If you have time left, or later to practise, do one of the other versions as well. At the end, compare your results with a classmate who chose a different version.
-
-## Assignment 1: One variant, two databases
-
-*Time: 30 min.*
-
-In this assignment, you will explore the dbSNP database using the variant rs2229992, which is located in the APC gene. dbSNP provides detailed information on genomic coordinates, allele changes, population frequencies, molecular consequences, clinical interpretation, and supporting studies. Go to dbSNP (<https://www.ncbi.nlm.nih.gov/snp/>) and search for rs2229992.
-
-:::{exercise} Question 1
-:label: db-s2b-a1-q1
-:nonumber:
-Which allelic **changes** and chromosomal position are reported for this SNP (GRCh38)? There is more than one alternative allele: list them all. How many publications are linked to this variant?
-:::
-
-:::{solution} db-s2b-a1-q1
-:class: dropdown
-Reference allele T, alternative alleles A, C and G, at chromosome 5, position 112,827,157 (GRCh38, `NC_000005.10`). The publication count is shown on the record and grows over time; dbSNP listed 20 citations on the day of checking (Ensembl lists 43).
-
-⚠️ **Release-volatile** (publication count). *Checked 2026-10-28, dbSNP build 157.*
-
-```{figure} figures/2b-train-dbsnp-summary.png
-:name: db-fig-2b-train-dbsnp-summary
-:alt: dbSNP rs2229992, summary.
-
-dbSNP rs2229992, summary. Screenshot of dbSNP, 2026-10-23 (NCBI, public domain).
-```
-:::
-
-:::{exercise} Question 2
-:label: db-s2b-a1-q2
-:nonumber:
-Open the Variant Details tab. The location of the variant is represented by multiple prefixes (NC\_, NG\_, NM\_, NP\_). What does each prefix represent, and why are multiple sequence contexts shown?
-:::
-
-:::{solution} db-s2b-a1-q2
-:class: dropdown
-- NC\_ → chromosome-level RefSeq genomic sequence.
-- NG\_ → RefSeqGene record: a curated genomic region covering the gene, including exons, introns and flanking sequence.
-- NM\_ → RefSeq mRNA (transcript) sequence.
-- NP\_ → RefSeq protein sequence.
-
-Multiple contexts are shown because the same variant must be placed on the genome, the gene, the transcript(s) and the protein. This keeps its position consistent across all kinds of sequence.
-
-```{figure} figures/2b-train-dbsnp-details.png
-:name: db-fig-2b-train-dbsnp-details
-:alt: dbSNP rs2229992, Variant Details.
-
-dbSNP rs2229992, Variant Details. Screenshot of dbSNP, 2026-10-23 (NCBI, public domain).
-```
-
-*Checked 2026-10-23, dbSNP build 157.*
-:::
-
-:::{exercise} Question 3
-:label: db-s2b-a1-q3
-:nonumber:
-Go to Clinical Significance. Which diseases or phenotypes are associated with this SNP? Which allele appears to have the strongest harmful effect?
-:::
-
-:::{solution} db-s2b-a1-q3
-:class: dropdown
-The phenotype reported is familial adenomatous polyposis 1 (FAP1). The T→C allele is classified **benign**, by an expert panel. The T→G allele, a stop-gained change (p.Tyr486Ter), is classified **pathogenic**, from a single submitter. So T→G is the allele with the strongest harmful interpretation. The T→A allele would also create a stop codon, but has no ClinVar record.
-
-⚠️ **Release-volatile** — ClinVar classifications are revised as evidence accumulates. *Checked 2026-10-23, ClinVar.*
-
-```{figure} figures/2b-train-dbsnp-clinical.png
-:name: db-fig-2b-train-dbsnp-clinical
-:alt: dbSNP rs2229992, Clinical Significance.
-
-dbSNP rs2229992, Clinical Significance. Screenshot of dbSNP, 2026-10-23 (NCBI, public domain).
-```
-:::
-
-:::{exercise} Question 4
-:label: db-s2b-a1-q4
-:nonumber:
-What is the clinical interpretation? How can the same genomic position have alleles with different clinical impacts?
-:::
-
-:::{solution} db-s2b-a1-q4
-:class: dropdown
-Clinical interpretations range from benign (T→C) to pathogenic (T→G). Different alleles at the same position change the codon in different ways. Here T→C keeps tyrosine (TAT→TAC, synonymous), while T→G and T→A turn it into a stop codon (TAG or TAA). Each substitution can therefore have its own molecular and clinical effect, even at the same genomic location.
-
-*Checked 2026-10-23, dbSNP build 157.*
-:::
-
-:::{exercise} Question 5
-:label: db-s2b-a1-q5
-:nonumber:
-Go to the Frequency tab. What is the global allele frequency in the 1000 Genomes study (use the `1000Genomes` row with n=5008, not `1000Genomes_30X`)?
-:::
-
-:::{solution} db-s2b-a1-q5
-:class: dropdown
-T = 0.4900, C = 0.5100. The alternative allele C is slightly *more* common worldwide than the reference allele T. The reference genome is one particular sequence, not a record of the most common allele.
-
-```{figure} figures/2b-train-dbsnp-frequency.png
-:name: db-fig-2b-train-dbsnp-frequency
-:alt: dbSNP rs2229992, Frequency tab (1000Genomes ringed).
-
-dbSNP rs2229992, Frequency tab (1000Genomes ringed). Screenshot of dbSNP, 2026-10-23 (NCBI, public domain).
-```
-
-*Checked 2026-10-23, dbSNP build 157.*
-:::
-
-:::{exercise} Question 6
-:label: db-s2b-a1-q6
-:nonumber:
-Which continental populations are represented in the 1000 Genomes dataset?
-:::
-
-:::{solution} db-s2b-a1-q6
-:class: dropdown
-African, American (admixed American), East Asian, European and South Asian.
-
-*Checked 2026-10-23, dbSNP build 157.*
-:::
-
-:::{exercise} Question 7
-:label: db-s2b-a1-q7
-:nonumber:
-According to 1000 Genomes, which continental population has the lowest frequency of the alternative allele?
-:::
-
-:::{solution} db-s2b-a1-q7
-:class: dropdown
-The African population: reference allele T at 0.838 and alternative allele C at 0.162.
-
-*Checked 2026-10-23, dbSNP build 157.*
-:::
-
-:::{exercise} Question 8
-:label: db-s2b-a1-q8
-:nonumber:
-For the African and American populations, calculate Hardy–Weinberg genotype frequencies (Z/Z, Z/z, z/z), taking Z = the reference allele T and z = the alternative allele C. How do the expected genotype frequencies differ between the two populations?
-:::
-
-:::{solution} db-s2b-a1-q8
-:class: dropdown
-The Hardy–Weinberg principle says that, under equilibrium, genotype frequencies follow from allele frequencies: p² + 2pq + q² = 1. More information: <https://en.wikipedia.org/wiki/Hardy%E2%80%93Weinberg_principle>
-
-African (p = T = 0.838, q = C = 0.162):
-
-- Z/Z = T/T = p² = 0.838² = 0.702
-- Z/z = T/C = 2pq = 2 × 0.838 × 0.162 = 0.272
-- z/z = C/C = q² = 0.162² = 0.026
-
-American (p = T = 0.333, q = C = 0.667):
-
-- Z/Z = T/T = p² = 0.333² = 0.111
-- Z/z = T/C = 2pq = 2 × 0.333 × 0.667 = 0.444
-- z/z = C/C = q² = 0.667² = 0.445
-
-Interpretation: in the African population the C/C homozygote is rare because the C allele is uncommon. In the American population almost half of people are expected to be C/C, reflecting the much higher frequency of C.
-
-*Checked 2026-10-23, dbSNP build 157.*
-:::
-
-:::{exercise} Question 9
-:label: db-s2b-a1-q9
-:nonumber:
-dbSNP reports **stop-gained** among the molecular consequences at this position in APC, a tumour-suppressor gene. Yet you have just seen alternative-allele frequencies above 0.65 in some populations, and 0.51 globally. Those two facts do not sit together comfortably. Look again at which allele carries which consequence, and explain the apparent contradiction. What does this tell you about reading a single "most severe consequence" label off a variant record?
-:::
-
-:::{solution} db-s2b-a1-q9
-:class: dropdown
-The contradiction is only apparent, because the consequences belong to *different alleles* at the same position. The allele that is common, reaching high frequency in some populations, is the synonymous change, which leaves the protein sequence untouched. The stop-gained alleles are separate, rare alternatives at the same base.
-
-A "most severe consequence" summary reports the worst consequence seen at the position, across all alleles. That is deliberately conservative, and it is not a statement about the allele most people carry. Read "stop-gained" and stop there, and you would conclude that most people in some populations carry a truncated APC. That is impossible for a tumour suppressor whose loss causes familial adenomatous polyposis.
-
-The general lesson: a variant record describes a *position*, and a position can carry several alleles with different consequences and different clinical interpretations. Always resolve which allele you are talking about before quoting a consequence or a pathogenicity call.
-
-⚠️ **Release-volatile** — allele frequencies are re-computed as population datasets grow. *Checked 2026-10-23, dbSNP build 157.*
-:::
-
-:::{exercise} Question 10
-:label: db-s2b-a1-q10
-:nonumber:
-Now open the same variant in **Ensembl**. Type `rs2229992` into the search box at <https://www.ensembl.org/search> (if the box is greyed out, first add Human GRCh38.p14 under **Find a genome**) and open the result in the Feature explorer. Ensembl's variant page shows one alternative allele at a time: select the **C** allele, then open **Allele frequency**.
-
-a) Does Ensembl's 1000 Genomes frequency for the C allele agree with dbSNP? Which other dataset does Ensembl show?
-
-b) What does Ensembl say in the header bar as "Most severe consequence"? Open **Transcript consequences** for the C allele: what is the consequence on the MANE Select transcript?
-
-c) Ensembl shows no clinical significance for this variant (Variant phenotypes: 0). Where did you find that information instead? What does that tell you about which database to use for which question?
-:::
-
-:::{solution} db-s2b-a1-q10
-:class: dropdown
-a) Yes. Ensembl shows 1000 Genomes phase 3 with global 0.51 for C, and per population African 0.162, American 0.667, East Asian 0.665, European 0.580, South Asian 0.638, the same as dbSNP. It also shows gnomAD v4.1 (genomes 0.482, exomes 0.587), a much larger dataset.
-
-b) The header says **stop_gained**, exactly the trap from question 9. The header summarises the position across all alleles; the C allele itself is a **synonymous variant** on the MANE Select transcript ENST00000257430.
-
-c) In dbSNP, which takes it from ClinVar. Ensembl's rebuilt website gives consequences and frequencies but, unlike its old site, no clinical interpretations. Use Ensembl or dbSNP for *what a variant does to the transcript and how common it is*, and ClinVar (directly or through dbSNP) for *what it means clinically*.
-
-⚠️ **Release-volatile.** *Checked 2026-10-22, Ensembl (Release 2026-07; variant data from dbSNP 157).*
-
-```{figure} figures/2b-train-ens-var-freq.png
-:name: db-fig-2b-train-ens-var-freq
-:alt: Ensembl, rs2229992: header and allele frequencies.
-
-Ensembl, rs2229992: header and allele frequencies. Screenshot of Ensembl, 2026-10-23 (EMBL-EBI, reused with attribution under Ensembl's image reuse terms).
-```
-:::
-
-## Assignment 2: One gene through all six databases
-
-*Time: 80 min.*
-
-You follow one gene through every database of practicals 2A and 2B: NCBI Gene, Ensembl, OMIM, UniProt, WikiPathways and dbSNP/ClinVar. Each version is tied to a tutorial case. Use the starting points in the table, and write down which source you used for each answer and whether the sources agree. Answer the questions the way you would prepare for the post-discussion of a PBL case. The answers to most questions can be found in more than one database.
+You follow one gene through every database of practicals 1 and 2: NCBI Gene, Ensembl, OMIM, UniProt, WikiPathways and dbSNP/ClinVar. Each version has its own theme. Use the starting points in the table, and write down which source you used for each answer and whether the sources agree. Answer the questions as if you were preparing a short summary of the gene for fellow students. The answers to most questions can be found in more than one database.
 
 | | **Version A** | **Version B** | **Version C** |
 |---|---|---|---|
 | **Gene** | TP53 | LMNA | APOE |
-| **Tutorial case** | 12: Hallmarks of cancer | 7 and 8: Hallmarks of ageing | 10: Alzheimer disease |
+| **Theme** | Hallmarks of cancer | Hallmarks of ageing | Alzheimer disease |
 | **NCBI Gene** | <https://www.ncbi.nlm.nih.gov/gene/7157> | <https://www.ncbi.nlm.nih.gov/gene/4000> | <https://www.ncbi.nlm.nih.gov/gene/348> |
 | **Ensembl** | [ENSG00000141510](https://www.ensembl.org/feature-explorer/GCA_000001405.29/gene:ENSG00000141510) | [ENSG00000160789](https://www.ensembl.org/feature-explorer/GCA_000001405.29/gene:ENSG00000160789) | [ENSG00000130203](https://www.ensembl.org/feature-explorer/GCA_000001405.29/gene:ENSG00000130203) |
 | **Variant** | rs121912665 | rs58596362 | rs429358 |
 | **Pathway** | [WP707](https://www.wikipathways.org/pathways/WP707.html) DNA damage response | [WP4299](https://www.wikipathways.org/pathways/WP4299.html) Lamin A processing | [WP5124](https://www.wikipathways.org/pathways/WP5124.html) Alzheimer's disease |
 | **Partner protein** (question 9) | MDM2 | ZMPSTE24 | LRP1 |
 
-### Section 1: Identifiers and basic gene information
+## Section 1: Identifiers and basic gene information
 
 :::{exercise} Question 1
-:label: db-s2b-a2-q1
+:label: db-p3a1-q1
 :nonumber:
 What are the database identifiers and names for your gene, or the protein it encodes? Are there synonyms for the gene name? Fill in the table, including the URL of each page; you will need all of them in the next questions.
 
@@ -260,7 +38,7 @@ What are the database identifiers and names for your gene, or the protein it enc
 | UniProt | | | | |
 :::
 
-:::{solution} db-s2b-a2-q1
+:::{solution} db-p3a1-q1
 :class: dropdown
 **Version A — TP53**
 
@@ -295,12 +73,12 @@ Notice how the synonym lists differ between databases: some synonyms are disease
 :::
 
 :::{exercise} Question 2
-:label: db-s2b-a2-q2
+:label: db-p3a1-q2
 :nonumber:
 On which chromosome, and on which strand, is your gene located?
 :::
 
-:::{solution} db-s2b-a2-q2
+:::{solution} db-p3a1-q2
 :class: dropdown
 - **A — TP53:** chromosome 17 (17p13.1), reverse (minus) strand.
 - **B — LMNA:** chromosome 1 (1q22), forward (plus) strand.
@@ -309,10 +87,10 @@ On which chromosome, and on which strand, is your gene located?
 *Checked 2026-10-23, Ensembl and NCBI Gene.*
 :::
 
-### Section 2: A disease-associated variant
+## Section 2: A disease-associated variant
 
 :::{exercise} Question 3
-:label: db-s2b-a2-q3
+:label: db-p3a1-q3
 :nonumber:
 Look up the variant given in the table for your version.
 
@@ -327,7 +105,7 @@ d) How is the variant classified clinically in ClinVar (follow the link from dbS
 e) What is the global allele frequency, and which datasets report it? Is that frequency what you would expect, given the disease?
 :::
 
-:::{solution} db-s2b-a2-q3
+:::{solution} db-p3a1-q3
 :class: dropdown
 **Version A — TP53, rs121912665**
 
@@ -355,21 +133,21 @@ e) What is the global allele frequency, and which datasets report it? Is that fr
 
 ⚠️ **Release-volatile** — ClinVar classifications change. *Checked 2026-10-23 (frequencies 2026-10-28), dbSNP build 157, ClinVar (live), Ensembl (Release 2026-07). OMIM allelic variants checked by hand 2026-10-24.*
 
-```{figure} figures/2b-train-A-dbsnp.png
+```{figure} ../figures/2b-train-A-dbsnp.png
 :name: db-fig-2b-train-A-dbsnp
 :alt: Version A: dbSNP rs121912665.
 
 Version A: dbSNP rs121912665. Screenshot of dbSNP, 2026-10-23 (NCBI, public domain).
 ```
 
-```{figure} figures/2b-train-B-dbsnp.png
+```{figure} ../figures/2b-train-B-dbsnp.png
 :name: db-fig-2b-train-B-dbsnp
 :alt: Version B: dbSNP rs58596362.
 
 Version B: dbSNP rs58596362. Screenshot of dbSNP, 2026-10-23 (NCBI, public domain).
 ```
 
-```{figure} figures/2b-train-C-dbsnp.png
+```{figure} ../figures/2b-train-C-dbsnp.png
 :name: db-fig-2b-train-C-dbsnp
 :alt: Version C: dbSNP rs429358.
 
@@ -377,10 +155,10 @@ Version C: dbSNP rs429358. Screenshot of dbSNP, 2026-10-23 (NCBI, public domain)
 ```
 :::
 
-### Section 3: Transcripts and isoforms
+## Section 3: Transcripts and isoforms
 
 :::{exercise} Question 4
-:label: db-s2b-a2-q4
+:label: db-p3a1-q4
 :nonumber:
 Look up the transcripts / isoforms (splice variants) of your gene in Ensembl (use the **Transcripts table** view), UniProt and NCBI (RefSeq section), and fill in the table.
 
@@ -391,7 +169,7 @@ Look up the transcripts / isoforms (splice variants) of your gene in Ensembl (us
 | NCBI RefSeq | | |
 :::
 
-:::{solution} db-s2b-a2-q4
+:::{solution} db-p3a1-q4
 :class: dropdown
 | | Ensembl: total / protein coding | UniProt isoforms | NCBI RefSeq: curated transcripts / proteins |
 |---|---|---|---|
@@ -405,21 +183,21 @@ For APOE, note that the well-known E2, E3 and E4 forms are *not* isoforms. They 
 
 ⚠️ **Release-volatile** — all three change between releases, and Ensembl's counts changed even between August and October 2026 while its release label stayed the same. Quote a number with the database, the release or gene version (e.g. ENSG00000141510.21) and the date. *Checked 2026-10-23 (Ensembl, UniProt release 2026_03, NCBI RefSeq annotation RS_2025_08).*
 
-```{figure} figures/2b-train-A-ens-tx.png
+```{figure} ../figures/2b-train-A-ens-tx.png
 :name: db-fig-2b-train-A-ens-tx
 :alt: Version A: Ensembl, TP53 Transcripts table (first rows).
 
 Version A: Ensembl, TP53 Transcripts table (first rows). Screenshot of Ensembl, 2026-10-23 (EMBL-EBI, reused with attribution under Ensembl's image reuse terms).
 ```
 
-```{figure} figures/2b-train-B-ens-tx.png
+```{figure} ../figures/2b-train-B-ens-tx.png
 :name: db-fig-2b-train-B-ens-tx
 :alt: Version B: Ensembl, LMNA Transcripts table (first rows).
 
 Version B: Ensembl, LMNA Transcripts table (first rows). Screenshot of Ensembl, 2026-10-23 (EMBL-EBI, reused with attribution under Ensembl's image reuse terms).
 ```
 
-```{figure} figures/2b-train-C-ens-tx.png
+```{figure} ../figures/2b-train-C-ens-tx.png
 :name: db-fig-2b-train-C-ens-tx
 :alt: Version C: Ensembl, APOE Transcripts table (first rows).
 
@@ -428,12 +206,12 @@ Version C: Ensembl, APOE Transcripts table (first rows). Screenshot of Ensembl, 
 :::
 
 :::{exercise} Question 5
-:label: db-s2b-a2-q5
+:label: db-p3a1-q5
 :nonumber:
 Which transcript is labelled **MANE Select** in Ensembl, and which in NCBI? Is it the same transcript? Why is it useful that the two databases agree on one transcript?
 :::
 
-:::{solution} db-s2b-a2-q5
+:::{solution} db-p3a1-q5
 :class: dropdown
 - **A — TP53:** ENST00000269305 = NM_000546.6 (protein NP_000537.3, 393 aa).
 - **B — LMNA:** ENST00000368300 = NM_170707.4 (lamin A, 664 aa). LMNA also has a second MANE transcript, **MANE Plus Clinical** NM_005572.4 (lamin C, 572 aa), because clinically important variants are reported on it too.
@@ -445,25 +223,25 @@ Yes, it is the same transcript: MANE (Matched Annotation from NCBI and EMBL-EBI)
 :::
 
 :::{exercise} Question 6
-:label: db-s2b-a2-q6
+:label: db-p3a1-q6
 :nonumber:
 How can you verify that two isoforms with different labels (e.g. "isoform a" vs "isoform 1") represent the same protein?
 :::
 
-:::{solution} db-s2b-a2-q6
+:::{solution} db-p3a1-q6
 :class: dropdown
 Compare their sequences: the only reliable way is to align the amino-acid (or nucleotide) sequences. Labels and numbering differ between databases, so matching names is not enough. Cross-references help: RefSeq NP\_ IDs, UniProt isoform IDs (such as P04637-1) and MANE Select are the most consistent anchors between databases.
 :::
 
-### Section 4: Expression and protein
+## Section 4: Expression and protein
 
 :::{exercise} Question 7
-:label: db-s2b-a2-q7
+:label: db-p3a1-q7
 :nonumber:
 Using NCBI Gene, which tissues show the highest expression of your gene? Name the top three. (In the **Expression** section, select the HPA RNA-seq normal-tissue dataset in the drop-down; it may open on a different dataset.)
 :::
 
-:::{solution} db-s2b-a2-q7
+:::{solution} db-p3a1-q7
 :class: dropdown
 - **A — TP53:** spleen, lymph node, skin. The differences are small: TP53 is expressed broadly.
 - **B — LMNA:** gall bladder, skin, lung. Also broad.
@@ -473,12 +251,12 @@ Using NCBI Gene, which tissues show the highest expression of your gene? Name th
 :::
 
 :::{exercise} Question 8
-:label: db-s2b-a2-q8
+:label: db-p3a1-q8
 :nonumber:
 Summarise the functional descriptions of your gene from NCBI Gene (Summary) and UniProt (Function). Note one similarity and one difference in their emphasis. What does UniProt say about where the protein is expressed (section **Expression**, "Tissue specificity")?
 :::
 
-:::{solution} db-s2b-a2-q8
+:::{solution} db-p3a1-q8
 :class: dropdown
 In general, NCBI gives a broad summary of what the gene does and which diseases it is linked to, while UniProt gives a more detailed, mechanistic and protein-centred description, with interaction partners, isoforms and evidence.
 
@@ -490,12 +268,12 @@ In general, NCBI gives a broad summary of what the gene does and which diseases 
 :::
 
 :::{exercise} Question 9
-:label: db-s2b-a2-q9
+:label: db-p3a1-q9
 :nonumber:
 Does UniProt report a direct interaction between your protein and the **partner protein** in the table? (UniProt, section **Interaction**, Binary interactions.) Look for the partner in your pathway in question 10: what does the pathway say about the two of them?
 :::
 
-:::{solution} db-s2b-a2-q9
+:::{solution} db-p3a1-q9
 :class: dropdown
 Yes, in all three versions the partner is listed among the binary interactions:
 
@@ -505,21 +283,21 @@ Yes, in all three versions the partner is listed among the binary interactions:
 
 How many interaction partners UniProt lists differs a lot: TP53 has 187, LMNA 94, APOE 47.
 
-```{figure} figures/2b-train-A-uni-interaction.png
+```{figure} ../figures/2b-train-A-uni-interaction.png
 :name: db-fig-2b-train-A-uni-interaction
 :alt: Version A: UniProt P04637, binary interactions (MDM2 ringed).
 
 Version A: UniProt P04637, binary interactions (MDM2 ringed). Screenshot of UniProt, 2026-10-23 (CC BY 4.0).
 ```
 
-```{figure} figures/2b-train-B-uni-interaction.png
+```{figure} ../figures/2b-train-B-uni-interaction.png
 :name: db-fig-2b-train-B-uni-interaction
 :alt: Version B: UniProt P02545, binary interactions (ZMPSTE24 ringed).
 
 Version B: UniProt P02545, binary interactions (ZMPSTE24 ringed). Screenshot of UniProt, 2026-10-28 (CC BY 4.0).
 ```
 
-```{figure} figures/2b-train-C-uni-interaction.png
+```{figure} ../figures/2b-train-C-uni-interaction.png
 :name: db-fig-2b-train-C-uni-interaction
 :alt: Version C: UniProt P02649, binary interactions (LRP1 ringed).
 
@@ -529,35 +307,35 @@ Version C: UniProt P02649, binary interactions (LRP1 ringed). Screenshot of UniP
 *Checked 2026-10-23, UniProt release 2026_03.*
 :::
 
-### Section 5: Pathways and functional context
+## Section 5: Pathways and functional context
 
 :::{exercise} Question 10
-:label: db-s2b-a2-q10
+:label: db-p3a1-q10
 :nonumber:
 Open the pathway for your version (see the table). Find your gene and the partner protein in the diagram. What happens between them, and what kind of interaction (arrow type) is shown? Which other protein acts on your gene product?
 :::
 
-:::{solution} db-s2b-a2-q10
+:::{solution} db-p3a1-q10
 :class: dropdown
 - **A — TP53, WP707 DNA damage response:** MDM2 → TP53 is drawn with a **T-bar**, meaning inhibition: MDM2 marks p53 for degradation. **ATM** → TP53 is an arrow, meaning activation: DNA damage, sensed by ATM, switches p53 on. TP53 in turn activates CDKN1A (p21), GADD45 and pro-apoptotic genes (BAX, BBC3, PMAIP1).
 - **B — LMNA, WP4299 Lamin A processing:** LMNA is translated into **pre-lamin A**, which is processed in steps. Farnesyl transferase attaches a farnesyl group to the C-terminal CaaX motif, the last three amino acids are removed (in this diagram also by ZMPSTE24) and the end is methylated, and finally ZMPSTE24 (drawn as "CAAX prenyl protease 1 homolog") cuts off the last 15 amino acids, farnesyl group included. That gives mature lamin A. There is no direct LMNA–ZMPSTE24 arrow: each enzyme is joined to the step it catalyses by a line ending in a small open circle (catalysis). The pathway marks the link to progeria: progerin lacks the second ZMPSTE24 cleavage site and stays permanently farnesylated (question 3).
 - **C — APOE, WP5124 Alzheimer's disease:** amyloid-β (Aβ40 and Aβ42) → APOE, then APOE → LRP1, arrows meaning a positive link. APOE binds amyloid-β and carries it to the receptor LRP1 for clearance from the brain. The ε4 form of APOE does this less efficiently.
 
-```{figure} figures/2b-train-A-wp707.png
+```{figure} ../figures/2b-train-A-wp707.png
 :name: db-fig-2b-train-A-wp707
 :alt: Version A: WP707, TP53 and MDM2 ringed.
 
 Version A: WP707, TP53 and MDM2 ringed. Figure from WikiPathways WP707 (CC0).
 ```
 
-```{figure} figures/2b-train-B-wp4299.png
+```{figure} ../figures/2b-train-B-wp4299.png
 :name: db-fig-2b-train-B-wp4299
 :alt: Version B: WP4299, LMNA and ZMPSTE24 ringed.
 
 Version B: WP4299, LMNA and ZMPSTE24 ringed. Figure from WikiPathways WP4299 (CC0).
 ```
 
-```{figure} figures/2b-train-C-wp5124.png
+```{figure} ../figures/2b-train-C-wp5124.png
 :name: db-fig-2b-train-C-wp5124
 :alt: Version C: WP5124, APOE and LRP1 ringed.
 
@@ -568,12 +346,12 @@ Version C: WP5124, APOE and LRP1 ringed. Figure from WikiPathways WP5124 (CC0).
 :::
 
 :::{exercise} Question 11
-:label: db-s2b-a2-q11
+:label: db-p3a1-q11
 :nonumber:
 Using UniProt's GO annotations (section **Function**, GO annotations → Biological Process), give one biological process supported by **IDA** evidence (Inferred from Direct Assay). Provide the GO ID. What does IDA evidence mean, compared with evidence that was predicted?
 :::
 
-:::{solution} db-s2b-a2-q11
+:::{solution} db-p3a1-q11
 :class: dropdown
 Many answers are possible; examples:
 
@@ -586,17 +364,17 @@ IDA means a laboratory experiment showed the process directly for this protein. 
 *Checked 2026-10-23, UniProt release 2026_03.*
 :::
 
-### Section 6: Phenotypes and inheritance
+## Section 6: Phenotypes and inheritance
 
 12) Which phenotypes or diseases are associated with your gene in OMIM (Gene–Phenotype table), NCBI Gene (Phenotypes), ClinVar and UniProt (Disease & Variants)? What do these phenotypes have in common?
 
 :::{exercise} Question 13
-:label: db-s2b-a2-q13
+:label: db-p3a1-q13
 :nonumber:
 What inheritance pattern does OMIM give for the main disease of your version (A: Li-Fraumeni syndrome; B: Hutchinson-Gilford progeria; C: Alzheimer disease 2)? Does UniProt say the same?
 :::
 
-:::{solution} db-s2b-a2-q13
+:::{solution} db-p3a1-q13
 :class: dropdown
 **Version A — TP53:** mostly cancers and cancer predisposition: Li-Fraumeni syndrome, colorectal cancer, breast cancer, hepatocellular carcinoma, osteosarcoma, adrenocortical carcinoma, choroid plexus papilloma and others, plus bone marrow failure syndrome 5. Li-Fraumeni syndrome is **autosomal dominant** in OMIM, and UniProt says the same. Many of the other entries concern somatic mutations, acquired in the tumour rather than inherited.
 
@@ -607,15 +385,15 @@ What inheritance pattern does OMIM give for the main disease of your version (A:
 *Checked 2026-10-23 for NCBI Gene, ClinVar and UniProt release 2026_03; OMIM tables checked by hand 2026-10-24.*
 :::
 
-### Section 7: Integration
+## Section 7: Integration
 
 :::{exercise} Question 14
-:label: db-s2b-a2-q14
+:label: db-p3a1-q14
 :nonumber:
 Compare the tissues where your gene is most highly expressed (question 7) with the phenotypes associated with it (questions 12–13). Is expression level a good predictor of disease involvement? Explain.
 :::
 
-:::{solution} db-s2b-a2-q14
+:::{solution} db-p3a1-q14
 :class: dropdown
 No, not in any of the three versions.
 
@@ -627,12 +405,12 @@ Disease involvement depends on what a variant does to the protein, on which tiss
 :::
 
 :::{exercise} Question 15
-:label: db-s2b-a2-q15
+:label: db-p3a1-q15
 :nonumber:
 **Compare with another version.** Put your answers to questions 3e, 4 and 13 next to those of a classmate who chose a different version (or next to your own answers for a second version). How do the genes differ in number of transcripts, in how common the variant is, and in how the disease is inherited? What does the comparison of TP53 or LMNA with APOE tell you about the difference between a disease-causing variant and a risk allele?
 :::
 
-:::{solution} db-s2b-a2-q15
+:::{solution} db-p3a1-q15
 :class: dropdown
 - **Transcripts:** LMNA has by far the most annotated transcripts in Ensembl (84), TP53 and APOE about 40, while UniProt lists 9, 6 and 1 isoforms. Annotation depth and protein diversity are different things.
 - **Variant frequency:** the TP53 and LMNA variants are extremely rare, while APOE ε4 is carried by about 1 in 7 alleles worldwide.
